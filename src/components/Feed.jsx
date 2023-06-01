@@ -1,11 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Box, Stack, Typography } from '@mui/material';
 
-import {Sidebar, Videos} from './'
+import { Sidebar, Videos } from './'
 
-
+import { fetchFromAPI } from './utils/fetchFromAPI'
 
 const Feed = () => {
+  const [selectedCategory, setSelectedCategory] = useState('New');
+
+  useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
+  }, [])
+
+
+
   return (
     <Stack sx={{
       flexDirection: {
@@ -18,7 +26,7 @@ const Feed = () => {
 
         <Typography className='copyright'
           variant='body2' sx={{ mt: 1.5, color: '#fff' }}>
-          Copyright 2023 STAY GOLD
+          Copyright 2023 STAY GOLD MEDIA
         </Typography>
 
       </Box>
@@ -33,7 +41,7 @@ const Feed = () => {
           New
           <span style={{ color: '#F31503' }}> videos </span>
         </Typography>
-        
+
         <Videos videos={{}} />
       </Box>
 
