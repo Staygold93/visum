@@ -9,34 +9,41 @@ import { fetchFromAPI } from './utils/fetchFromAPI';
 
 
 const ChannelDetail = () => {
-const [channelDetail, setchannelDetail] = useState(null)
+  const [channelDetail, setchannelDetail] = useState(null)
 
-const [videos, setvideos] = useState([])
+  const [videos, setvideos] = useState([])
 
-const { id } = useParams();
- console.log(channelDetail)
+  const { id } = useParams();
+  console.log(channelDetail)
 
-useEffect(() => {
-fetchFromAPI(`channels?part="snippet&id=${id}`)
-.then((data) => setchannelDetail(data?.items[0]) )
+  useEffect(() => {
+    fetchFromAPI(`channels?part="snippet&id=${id}`)
+      .then((data) => setchannelDetail(data?.items[0]))
 
-fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
-.then((data) => setvideos(data?.items));
+    fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
+      .then((data) => setvideos(data?.items));
 
-}, [id])
+  }, [id])
 
   return (
     <Box minHeight='95vh'>
       <Box>
         <div style={{
-        background: 'rgb(2,0,36)',
-        background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,203,199,1) 52%, rgba(109,238,150,1) 92%)',
+          height: '300px',
+          background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,203,199,1) 52%, rgba(109,238,150,1) 92%)',
+          zIndex: 10,
         }} />
 
+        <ChannelCard channelDetail={channelDetail} marginTop="-110px" />
+
       </Box>
-      
+      <Box p={2} display="flex">
+      <Box sx={{ mr: { sm: '100px' } }}/>
+        <Videos videos={videos} />
+
     </Box>
-  )
+  </Box>
+  );
 }
 
 export default ChannelDetail
