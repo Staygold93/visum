@@ -18,7 +18,7 @@ Channel Page
 Search Feature
 ![image](https://github.com/Staygold93/visum/assets/112224915/95a9f37d-3888-485c-bc12-0b18e4f6664a)
 
-![image](https://github.com/Staygold93/visum/assets/112224915/36e2e449-b40e-4a69-baa0-5456f48a06c4)
+
 
 
 ## Developer: 
