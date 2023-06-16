@@ -16,6 +16,8 @@ Home Page
 Channel Page
 ![image](https://github.com/Staygold93/visum/assets/112224915/1655591f-3059-4e3a-81c4-200318208630)
 Search Feature
+![image](https://github.com/Staygold93/visum/assets/112224915/c1f79582-84e1-4b94-a1df-b69c47212238)
+
 ![image](https://github.com/Staygold93/visum/assets/112224915/95a9f37d-3888-485c-bc12-0b18e4f6664a)
 
 
