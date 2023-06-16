@@ -5,6 +5,10 @@ A responsive React.js app and Material UI Youtube clone app.
 
 
 
+## Deployed Site Link:
+https://648bcaa38fa4691a20f3b4e0--fascinating-rolypoly-57090f.netlify.app/
+
+
 
 ## Screenshots
 
@@ -13,3 +17,9 @@ A responsive React.js app and Material UI Youtube clone app.
 Search Feature
 ![image](https://github.com/Staygold93/visum/assets/112224915/1655591f-3059-4e3a-81c4-200318208630)
 ![image](https://github.com/Staygold93/visum/assets/112224915/95a9f37d-3888-485c-bc12-0b18e4f6664a)
+
+
+Developer: 
+Aldo Perez
+Email: perezaldo99@gmail.com
+Github: Staygold93
