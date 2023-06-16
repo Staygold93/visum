@@ -1,6 +1,5 @@
 # visum
-A responsive React.js app and Material UI Youtube clone app. 
-
+A responsive React JS and Material UI application consisting of stunning video sections, custom categories, channel pages, and, most importantly you can play your favorite Youtube Videos.
 
 
 
