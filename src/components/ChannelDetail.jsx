@@ -26,7 +26,16 @@ fetchFromAPI(`search?channelId=${id}&part=snippet&order=date`)
 }, [id])
 
   return (
-    <div>{id}</div>
+    <Box minHeight='95vh'>
+      <Box>
+        <div style={{
+        background: 'rgb(2,0,36)',
+        background: 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,203,199,1) 52%, rgba(109,238,150,1) 92%)',
+        }} />
+
+      </Box>
+      
+    </Box>
   )
 }
 
