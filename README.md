@@ -19,7 +19,7 @@ Search Feature
 ![image](https://github.com/Staygold93/visum/assets/112224915/95a9f37d-3888-485c-bc12-0b18e4f6664a)
 
 
-Developer: 
-Aldo Perez
-Email: perezaldo99@gmail.com
-Github: Staygold93
+## Developer: 
+* Aldo Perez
+* Email: perezaldo99@gmail.com
+* Github: Staygold93
